@@ -90,6 +90,10 @@ Below is the execution timeline of our two-week sprint, detailing completed and 
 |           |   **Esli**  | Test Silero VAD, Whisper Large-v3, Faster-Whisper, Llama 3.2 3B, llama.cpp, Edge TTS (az-AZ-BabekNeural), Knowledge Base Retrieval.       |
 |           |  **Orxan**  | Test Silero VAD, Whisper Medium, Faster-Whisper, Aya 8B, Ollama, Edge TTS (az-AZ-BabekNeural), ChromaDB + Knowledge Base.                 |
 |           | **Ibrahim** | Test Silero VAD, Whisper Distil-Large-v3, Faster-Whisper, Ollama, gTTS (fallback), ChromaDB + Knowledge Base.                             |
+| **Day 3** | **Ulviyye** | Test Silero VAD, Whisper Large-v3, Faster-Whisper, Qwen 2.5 7B, llama.cpp, Edge TTS (az-AZ-BanuNeural), Custom Keyword-Overlap Retriever. |
+|           |   **Esli**  | Test Silero VAD, Whisper Large-v3, Faster-Whisper, Llama 3.2 3B, llama.cpp, Edge TTS (az-AZ-BabekNeural), Knowledge Base Retrieval.       |
+|           |  **Orxan**  | Test Silero VAD, Whisper Medium, Faster-Whisper, Aya 8B, Ollama, Edge TTS (az-AZ-BabekNeural), ChromaDB + Knowledge Base.                 |
+|           | **Ibrahim** | Test Silero VAD, Whisper Distil-Large-v3, Faster-Whisper, Ollama, gTTS (fallback), ChromaDB + Knowledge Base.                             |
 
 
 ## Models Table
