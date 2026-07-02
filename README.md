@@ -80,32 +80,24 @@ High-quality voice assistants for the Azerbaijani language are still limited. Th
 
 Below is the execution timeline of our two-week sprint, detailing completed and planned milestones. 
 
-|    Day    | Team Member | Tasks                                                                                                                                     |
-| :-------: | :---------: | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Day 1** | **Ulviyye** | Research VAD, STT, LLM, TTS pipeline.                                                                                                     |
-|           |   **Esli**  | Create README, create To-Do list, research VAD, STT, LLM, TTS pipeline.                                                                   |
-|           |  **Orxan**  | Create GitHub repository, invite team members, brainstorm project ideas, research VAD, STT, LLM, TTS pipeline.                            |
-|           | **Ibrahim** | Brainstorm project ideas, research VAD, STT, LLM, TTS pipeline.                                                                           |
-| **Day 2** | **Ulviyye** | Test Silero VAD, Whisper Large-v3, Faster-Whisper, Qwen 2.5 7B, llama.cpp, Edge TTS (az-AZ-BanuNeural), Custom Keyword-Overlap Retriever. |
-|           |   **Esli**  | Test Silero VAD, Whisper Large-v3, Faster-Whisper, Llama 3.2 3B, llama.cpp, Edge TTS (az-AZ-BabekNeural), Knowledge Base Retrieval.       |
-|           |  **Orxan**  | Test Silero VAD, Whisper Medium, Faster-Whisper, Aya 8B, Ollama, Edge TTS (az-AZ-BabekNeural), ChromaDB + Knowledge Base.                 |
-|           | **Ibrahim** | Test Silero VAD, Whisper Distil-Large-v3, Faster-Whisper, Ollama, gTTS (fallback), ChromaDB + Knowledge Base.                             |
-| **Day 3** | **Ulviyye** | Updated the README, searched for, and evaluated four different local STT models.                                                          |
-|           |   **Esli**  | Updated the README; searched for and evaluated four different local STT models; compared three RAG embedding models (Qwen3-Embedding-0.6B, BGE-M3, and intfloat/multilingual-e5-large-instruct); and compared four LLMs (Qwen2.5:14B, Qwen2.5:7B, Gemma2:9B, and Aya:8B).           |
-|           |  **Orxan**  | Researched LLM improvements, evaluated Gemma 4-E 4B, and worked on RAG optimization.               |
-|           | **Ibrahim** | Researched the entire pipeline, evaluated Gemma 4B and E2B, and worked on RAG optimization.                    |
-| **Day 4** | **Ulviyye** | Searched for, and evaluated four different local STT models and created a scripts for this                                                     |
-|           |   **Esli**  | Updated the README, took notes, Compared Gemma 4:e4b and Qwen 7B models, evaluating response quality, performance, and inference speed.
-Compared Ollama and llama.cpp runtimes, analyzing their performance, response quality, and latency.         |
-|           |  **Orxan**  | Implemented significant improvements to the LLM performance and optimized the overall inference pipeline.
-Evaluated the Gemma model by testing it with a diverse set of prompts to assess response quality and consistency.
-Measured the voice assistant's performance by analyzing average latency and standard deviation (STD) across multiple test cases.
-Optimized the end-to-end pipeline to improve responsiveness, efficiency, and overall performance.           |
-|           | **Ibrahim** | Conducted in-depth research on Speech-to-Text (STT) technologies, architectures, and optimization techniques.
-Conducted in-depth research on LLM fine-tuning methods, including parameter-efficient approaches and best practices.
-Conducted in-depth research on Text-to-Speech (TTS) technologies, models, and performance optimization.
-Optimized the end-to-end voice assistant pipeline to improve overall efficiency and responsiveness.
-Evaluated the complete pipeline by testing it with a variety of user queries and analyzing its performance, response quality, and latency.                    |
+| Day | Team Member | Tasks |
+| :---: | :---: | :--- |
+| **Day 1** | **Ulviyye** | Research VAD, STT, LLM, and TTS pipeline. |
+|  | **Esli** | Create README, create To-Do list, and research VAD, STT, LLM, and TTS pipeline. |
+|  | **Orxan** | Create GitHub repository, invite team members, brainstorm project ideas, and research VAD, STT, LLM, and TTS pipeline. |
+|  | **Ibrahim** | Brainstorm project ideas and research VAD, STT, LLM, and TTS pipeline. |
+| **Day 2** | **Ulviyye** | Test Silero VAD, Whisper Large-v3, Faster-Whisper, Qwen 2.5 7B, llama.cpp, Edge TTS (az-AZ-BanuNeural), and Custom Keyword-Overlap Retriever. |
+|  | **Esli** | Test Silero VAD, Whisper Large-v3, Faster-Whisper, Llama 3.2 3B, llama.cpp, Edge TTS (az-AZ-BabekNeural), and Knowledge Base Retrieval. |
+|  | **Orxan** | Test Silero VAD, Whisper Medium, Faster-Whisper, Aya 8B, Ollama, Edge TTS (az-AZ-BabekNeural), and ChromaDB + Knowledge Base. |
+|  | **Ibrahim** | Test Silero VAD, Whisper Distil-Large-v3, Faster-Whisper, Ollama, gTTS (fallback), and ChromaDB + Knowledge Base. |
+| **Day 3** | **Ulviyye** | Updated the README; searched for and evaluated four different local STT models. |
+|  | **Esli** | Updated the README; searched for and evaluated four different local STT models; compared three RAG embedding models (Qwen3-Embedding-0.6B, BGE-M3, and intfloat/multilingual-e5-large-instruct); and compared four LLMs (Qwen2.5:14B, Qwen2.5:7B, Gemma2:9B, and Aya:8B). |
+|  | **Orxan** | Researched LLM improvements, evaluated Gemma 4-E 4B, and worked on RAG optimization. |
+|  | **Ibrahim** | Researched the entire pipeline, evaluated Gemma 4B and E2B, and worked on RAG optimization. |
+| **Day 4** | **Ulviyye** | Searched for and evaluated four different local STT models.<br>Created scripts for evaluating the models. |
+|  | **Esli** | Updated the README and took notes.<br>Compared Gemma 4:e4b and Qwen 7B models, evaluating response quality, performance, and inference speed.<br>Compared Ollama and llama.cpp runtimes, analyzing performance, response quality, and latency. |
+|  | **Orxan** | Implemented significant improvements to LLM performance and optimized the overall inference pipeline.<br>Evaluated the Gemma model using a diverse set of prompts to assess response quality and consistency.<br>Measured the voice assistant's average latency and standard deviation (STD) across multiple test cases.<br>Optimized the end-to-end pipeline to improve responsiveness, efficiency, and overall performance. |
+|  | **Ibrahim** | Conducted in-depth research on Speech-to-Text (STT) technologies, architectures, and optimization techniques.<br>Researched LLM fine-tuning methods, including parameter-efficient approaches and best practices.<br>Conducted in-depth research on Text-to-Speech (TTS) technologies, models, and performance optimization.<br>Optimized the end-to-end voice assistant pipeline.<br>Evaluated the complete pipeline using diverse user queries, analyzing response quality, latency, and overall performance. |
 
 
 ## Models Table
