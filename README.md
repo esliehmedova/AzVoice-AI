@@ -108,6 +108,32 @@ Below is the execution timeline of our two-week sprint, detailing completed and 
 | **Text-to-Speech (TTS)**           | Edge TTS – az-AZ-BanuNeural ✅<br>Edge TTS – az-AZ-BabekNeural ✅<br>gTTS (fallback) ✅            | XTTS v2, F5-TTS, Kokoro TTS, MeloTTS, Orpheus TTS                               |
 | **Knowledge Retrieval (RAG)**      | Custom Keyword-Overlap Retriever ✅<br>Knowledge Base Retrieval ✅<br>ChromaDB + Knowledge Base ✅ | FAISS + Embeddings, Milvus, Qdrant, pgvector                                    |
 
+| **Pipeline Stage** | **Model / Technology** | **Reason (Why it was not selected / Why another model was preferred)** |
+|--------------------|------------------------|-------------------------------------------------------------------------|
+| Voice Activity Detection (VAD) | Silero VAD | + |
+| Speech-to-Text (STT) | Whisper Medium | Insufficient Azerbaijani speech recognition accuracy. |
+| | Whisper Large-v3 | Insufficient Azerbaijani speech recognition accuracy. |
+| | Whisper Distil-Large-v3 | Insufficient Azerbaijani speech recognition accuracy. |
+| | Faster-Whisper (CTranslate2 backend) | + |
+| STT Backend | Faster-Whisper | + |
+| Large Language Model (LLM) | Qwen 2.5 7B | High inference latency; often generated incorrect answers or failed to answer user queries. |
+| | Llama 3.2 3B | High inference latency; often generated incorrect answers or failed to answer user queries. |
+| | Aya 8B | High inference latency; often generated incorrect answers or failed to answer user queries. |
+| | Gemma4:e4b | + |
+| | Qwen3 14B | High inference latency on our hardware; occasionally produced hallucinations and unexpected responses in Chinese. |
+| LLM Inference Engine | Ollama | + |
+| | llama.cpp | Ask Orkhan. |
+| Text-to-Speech (TTS) | Edge TTS – az-AZ-BanuNeural | Ask Orkhan (better and more natural voice quality). |
+| | Edge TTS – az-AZ-BabekNeural | + |
+| | gTTS (fallback) | Lower speech quality and less natural Azerbaijani pronunciation than the selected TTS solution. |
+| | edge-tts | Not selected because another TTS configuration provided better overall performance for the project requirements. |
+| Embedding Model | BAAI/bge-m3 (sentence-transformers) | + |
+| Retrieval (RAG) | Custom Keyword-Overlap Retriever | We chose FAISS (IndexFlatIP) + BM25 (rank-bm25) over the other retrieval methods because they provided faster search performance. |
+| | Knowledge Base Retrieval | We chose FAISS (IndexFlatIP) + BM25 (rank-bm25) over the other retrieval methods because they provided faster search performance. |
+| | ChromaDB + Knowledge Base | We chose FAISS (IndexFlatIP) + BM25 (rank-bm25) over the other retrieval methods because they provided faster search performance. |
+| | FAISS (IndexFlatIP) | + |
+| | BM25 (rank-bm25) | + | 
+
 # TODO LIST 
 
 ---
