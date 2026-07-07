@@ -113,24 +113,22 @@ Below is the execution timeline of our two-week sprint, detailing completed and 
 
 # TODO LIST 
 
-## Project Progress
-
-## Project Progress
+## Project Progress 
 
 | Component | Status | Notes |
 |-----------|:------:|-------|
 | Voice Activity Detection | ✅ Working | Silero VAD integrated |
 | Speech-to-Text | ✅ Working | Faster-Whisper + Whisper |
 | Large Language Model | ✅ Working | Gemma 4:e4b via Ollama |
-| Retrieval-Augmented Generation (RAG) | ✅ Working | ChromaDB + hotel knowledge base |
+| Retrieval-Augmented Generation (RAG) | ✅ Working | FAISS + hotel knowledge base |
 | Text-to-Speech | ✅ Working | Edge TTS (Azerbaijani voices) |
 | End-to-End Voice Pipeline | ✅ Working | STT → RAG → LLM → TTS |
 | Performance Evaluation | ✅ Working | Latency and response quality benchmarked |
 | Docker Deployment | ✅ Working | Development environment configured |
-| Tool Calling | 🔧 In Progress | External function integration |
+| Tool Calling | ✅ Working | External function integration |
 | Hotel Knowledge Base Expansion | 🔧 In Progress | Dataset and JSON improvements |
-| Website | 🔧 In Progress | User interface and project demonstration |
-| Presentation | 🔧 In Progress | Final demo slides and project overview |
+| Website | ⏳ Planned | User interface and project demonstration |
+| Presentation | ⏳ Planned | Final demo slides and project overview |
 | Monitoring Dashboard | ⏳ Planned | Conversation analytics and logs |
 | Web/Admin Interface | ⏳ Planned | Hotel operator dashboard | 
 
