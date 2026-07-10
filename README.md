@@ -9,7 +9,7 @@
 
 - **Orkhan Nuriyev → System Architecture, Voice Assistant Pipeline Development, Backend Integration
 - **Ibrahim Suleymanov → LLM Integration, Prompt Engineering, Speech Processing
-- **Esli Ehmedova → Demo Development, Web Interface, Frontend Integration
+- **Esli Ehmedova → Demo Development, Web Interface, Frontend Integration 
 - **Ulviyye Eliyeva → Data Collection & Preprocessing, Pipeline Testing & Evaluation, Documentation 
 
 ---
